@@ -12,7 +12,7 @@ export default function About() {
                   <div className="md:5/12 lg:w-5/12 group transition-all duration-300">
                     <img className='rounded-full mx-auto hover:border hover:shadow hover:scale-105
              transition-all duration-300'
-                          src="/rajveer.jpg"
+                          src={`${import.meta.env.BASE_URL}rajveer.jpg`}
                           alt="Rajveer"
                       /> 
                   </div>

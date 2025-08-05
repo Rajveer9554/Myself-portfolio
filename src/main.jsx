@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { createBrowserRouter, createRoutesFromElements, BrowserRouter, Route, RouterProvider } from 'react-router-dom'
+import { createHashRouter, createRoutesFromElements,  Route, RouterProvider } from 'react-router-dom'
 import Layout from './Layout.jsx'
 // import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
@@ -32,7 +32,7 @@ import Github from './components/Github/Github.jsx'
 //   }
 // ])
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       {/* <Route path='' element={<Home />}/> */}

@@ -84,8 +84,11 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    info@acme.org
-                                </div>
+                                               <a href="mailto:rajveer786067@gmail.com" className="text-blue-500 hover:underline">
+  rajveer786067@gmail.com
+</a>
+                      
+                                                                    </div>
                             </div>
                         </div>
 
