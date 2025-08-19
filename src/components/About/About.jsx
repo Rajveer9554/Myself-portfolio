@@ -1,21 +1,39 @@
-import React from "react";
+import React, {useEffect} from "react";
+import { motion } from "framer-motion";
 
 export default function About() {
+  // Page load hone pe top par scroll
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="bg-gray-800 y-16 bg-white">
+      <motion.div
+        initial={{ opacity: 0, y: 500 }}     // Start: invisible + down
+        animate={{ opacity: 1, y: 0 }}      // End: visible + normal position
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        
+      >
       <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
           <div className="md:5/12 lg:w-5/12 group transition-all duration-300">
+           <motion.div
+        initial={{ opacity: 0, y: 200 }}     // Start: invisible + down
+        animate={{ opacity: 1, y: 0 }}      // End: visible + normal position
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        
+      >
             <img
-              className="rounded-full mx-auto hover:border hover:shadow hover:scale-105
+              className="rounded-full mx-auto hover:border hover:scale-105
              transition-all duration-300"
               src={`${import.meta.env.BASE_URL}rajveers.jpg`}
               alt="Rajveer"
             />
+            </motion.div>
           </div>
 
           <div className="md:7/12 lg:w-6/12">
-          <div className="hover:bg-gray-300 hover:font-extrabold  rounded-lg hover:shadow hover:scale-105
+          <div className="hover:font-extrabold  rounded-lg hover:scale-105
              transition-all duration-300">
 
           
@@ -41,7 +59,7 @@ export default function About() {
             
             </div>
 
-            <div className="hover:bg-gray-300 hover:font-extrabold  rounded-lg hover:shadow hover:scale-105
+            <div className=" hover:font-extrabold   hover:scale-105
              transition-all duration-300">
           
             <p className="font-extrabold mt-6 text-gray-600">
@@ -58,7 +76,7 @@ export default function About() {
                </p>
                </div>
                
-               <div className="hover:bg-gray-300 hover:font-extrabold  rounded-lg hover:shadow hover:scale-105
+               <div className="hover:font-extrabold hover:scale-105
              transition-all duration-300">
               <p className="font-bold mt-6 text-gray-600"> My Goal:</p>
               <p className="font-semibold mt-2 text-gray-600">
@@ -71,6 +89,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      </motion.div>
     </div>
   );
 }

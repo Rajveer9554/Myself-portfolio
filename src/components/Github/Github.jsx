@@ -5,6 +5,10 @@ import { useEffect } from 'react'
 
 
 function Github() {
+  // Page load hone pe top par scroll
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
     
     
     const [data, setData] = useState([])

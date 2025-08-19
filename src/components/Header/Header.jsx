@@ -5,7 +5,7 @@ import {Link, NavLink} from 'react-router-dom'
 export default function Header() {
     return (
         <header className="shadow sticky z-50 top-0 ">
-            <nav className=" bg-transparent text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-orange-500 hover:to-pink-500 hover:scale-105 hover:shadow-lg border-0 rounded-xl px-5 lg:px-6 py-2.5">
+            <nav className=" bg-transparent text-gray-700 hover:text-white hover: bg-gradient-to-r hover:from-gray-500 hover:to-pink-500 hover:scale-105 hover:shadow-lg border-0 rounded-xl px-5 lg:px-6 py-2.5">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
@@ -87,6 +87,20 @@ export default function Header() {
                                     }
                                 >
                                     Github
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                to="/resume"
+                                    className={({ isActive }) =>
+                                            `block px-4 py-2 rounded-full font-medium transition-all duration-300 ${
+                                               isActive
+                                        ? "bg-orange-600 text-white shadow-md"
+                                                    : "text-gray-700 hover:text-white hover:bg-gradient-to-r hover:from-orange-500 hover:to-pink-500 hover:scale-105 hover:shadow-lg"
+                                                                   }`
+                                    }
+                                >
+                                    Resume
                                 </NavLink>
                             </li>
                            

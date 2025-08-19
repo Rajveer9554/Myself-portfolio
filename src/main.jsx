@@ -9,6 +9,7 @@ import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
 // import User from './components/User/User.jsx'
 import Github from './components/Github/Github.jsx'
+import Resume from './components/Resume-Show/Resume.jsx'
 
 // import Login from './components/Login/Login.jsx'
 
@@ -40,6 +41,7 @@ const router = createHashRouter(
       <Route path='contact' element={<Contact />}/>
       {/* <Route path='user/:userid' element={<User />}/> */}
       <Route path='github' element={<Github />}/>
+      <Route path='resume' element={<Resume />}/>
       
       {/* <Route path='login' element={<Login />}/> */}
       
