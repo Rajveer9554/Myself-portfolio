@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 export default function Resume() {
-  const resumeUrl = `${import.meta.env.BASE_URL}rajveer_resume.pdf`;
+  const resumeUrl = `${import.meta.env.BASE_URL}rajveerpratapresume (1).pdf`;
 
   // Page load hone pe top par scroll
   useEffect(() => {
