@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 
 export default function Footer() {
     return (
-        <footer className=" bg-gradient-to-r from-gray-500 to-pink-500 border-y">
-            <div className="mx-auto w-full max-w-screen-xl p-4 py-2 ">
+        <footer className=" bg-blue-800 border-y mt-5 ">
+            <div className="mx-auto w-full max-w-screen-xl p-2 py-2">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
@@ -34,7 +34,7 @@ export default function Footer() {
                         </div> */}
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
-                            <ul className="text-gray-700 font-medium">
+                            <ul className="text-black font-medium">
                                 <li className="mb-4">
                                     <a
                                         href="https://github.com/Rajveer9554"
@@ -54,7 +54,7 @@ export default function Footer() {
                         </div>
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
-                            <ul className="text-gray-700 font-medium">
+                            <ul className="text-black font-medium">
                                 <li className="mb-4">
                                     <Link to="#" className="hover:underline">
                                         Privacy Policy
@@ -71,7 +71,7 @@ export default function Footer() {
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className="text-sm text-gray-900 sm:text-center">
+                    <span className="text-sm text-black sm:text-center">
                         
                         <a href="https://instagram.com/__rajveer_pra_14/" className="hover:underline">
                             __rajveer_pra_14
@@ -79,7 +79,7 @@ export default function Footer() {
                         . Follow Us
                     </span>
                     <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-                        <Link to="#" className="text-gray-500 hover:text-gray-900">
+                        <Link to="#" className="text-black hover:text-gray-900">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -95,7 +95,7 @@ export default function Footer() {
                             </svg>
                             <span className="sr-only">Facebook page</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="#" className="text-black">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -107,7 +107,7 @@ export default function Footer() {
                             </svg>
                             <span className="sr-only">Discord community</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="#" className="text-black">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -123,7 +123,7 @@ export default function Footer() {
                             </svg>
                             <span className="sr-only">Twitter page</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="#" className="text-black">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -139,7 +139,7 @@ export default function Footer() {
                             </svg>
                             <span className="sr-only">GitHub account</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="#" className="text-black">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"

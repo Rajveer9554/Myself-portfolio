@@ -14,7 +14,7 @@ export default function About() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         
       >
-      <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+      <div className="container mx-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
           <div className="md:5/12 lg:w-5/12 group transition-all duration-300">
            <motion.div
@@ -24,7 +24,7 @@ export default function About() {
         
       >
             <img
-              className="rounded-full mx-auto hover:border hover:scale-105
+              className="rounded-full mx-auto w-150  h-150 hover:border hover:scale-115
              transition-all duration-300"
               src={`${import.meta.env.BASE_URL}rajveers.jpg`}
               alt="Rajveer"
@@ -32,15 +32,15 @@ export default function About() {
             </motion.div>
           </div>
 
-          <div className="md:7/12 lg:w-6/12">
-          <div className="hover:font-extrabold  rounded-lg hover:scale-105
+          <div className="md:7/12 lg:w-6/12 mt-10">
+          <div className="hover:font-extrabold  rounded-lg hover:scale-125
              transition-all duration-300">
 
           
-            <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
+            <h2 className="text-2xl text-black font-bold md:text-4xl">
               Hello! I'm Rajveer Pratap Singh
             </h2>
-            <p className="font-semibold mt-6 text-gray-600">
+            <p className="font-semibold mt-6 text-black">
               A passionate and dedicated Computer Science student from GITM,
               Lucknow. With a strong foundation in software development and a
               creative mindset, I specialize as a Full-Stack Web Developer,
@@ -50,7 +50,7 @@ export default function About() {
               backend systems. I enjoy turning complex problems into simple,
               beautiful, and intuitive solutions.
             </p>
-            <p className="font-semibold mt-6 text-gray-600">
+            <p className="font-semibold mt-6 text-black">
               With every project I build, I aim to learn something new and solve
               real-world problems. I'm always eager to improve my skills,
               contribute to exciting tech communities, and collaborate with
@@ -58,11 +58,21 @@ export default function About() {
             </p>
             
             </div>
+            <div className=" hover:font-extrabold   hover:scale-105">
+            <p className="font-extrabold mt-6 text-black">
+              Here are a few technologies I've been working with recently:
+              <br />
+            </p>
+            <p className="font-semibold mt-2 text-gray-600">
+             * HTML& CSS <br /> * JavaScript<br /> * React<br /> * Node.js<br /> * Express.js<br /> * MongoDB<br />
+              * TailwindCSS<br /> * Flowbite<br /> * GitHub
+            </p>
+            </div>
 
-            <div className=" hover:font-extrabold   hover:scale-105
+            <div className=" hover:font-extrabold   hover:scale-115
              transition-all duration-300">
           
-            <p className="font-extrabold mt-6 text-gray-600">
+            <p className="font-extrabold mt-6 text-black">
                
               What I'm interested in:
               <br />
@@ -76,9 +86,9 @@ export default function About() {
                </p>
                </div>
                
-               <div className="hover:font-extrabold hover:scale-105
+               <div className="hover:font-extrabold hover:scale-125
              transition-all duration-300">
-              <p className="font-bold mt-6 text-gray-600"> My Goal:</p>
+              <p className="font-bold mt-6 text-black"> My Goal:</p>
               <p className="font-semibold mt-2 text-gray-600">
                 To become a full-stack developer and work with a company where I
                 can grow, learn from mentors, and contribute meaningfully to
