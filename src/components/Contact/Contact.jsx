@@ -6,11 +6,11 @@ export default function Contact() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="relative flex items-top justify-center min-h-[700px]  bg-cover bg-contain  h-10vh ">
+    <div className="relative py-30 flex items-top justify-center  min-h-[700px]     h-10vh bg-gradient-to-r from-black via-purple-600 to-pink-500 bg-[length:400%_400%] animate-gradientShift ">
       <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
         <div className="mt-8 overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="p-6 mr-2 bg-gray-100 sm:rounded-lg">
+            <div className="p-6 mr-2 bg-white  sm:rounded-lg">
               <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
                 Get in touch:
               </h1>
@@ -139,7 +139,7 @@ export default function Contact() {
               </div>
                 </div>
 
-            <form className="p-6 flex flex-col justify-center">
+            <form className="p-6 flex flex-col  justify-center">
               <div className="flex flex-col">
                 <label for="name" className="hidden">
                   Full Name
@@ -185,10 +185,16 @@ export default function Contact() {
               >
                 Submit
               </button>
+              
             </form>
+           
           </div>
+          
         </div>
+        
       </div>
+
+      
     </div>
   );
 }
