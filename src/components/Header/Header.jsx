@@ -1,5 +1,8 @@
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
+import {  Contact } from "lucide-react";
+import {  Github } from "lucide-react";
+import {  FileUser } from "lucide-react";
 
 
 export default function Header() {
@@ -14,7 +17,7 @@ const logo=`${import.meta.env.BASE_URL}logo.jpg`;
                     <Link to="/" className="flex items-center">
                         <img
                             src={logo}
-                            className="mr-4 h-20 rounded-full"
+                            className="mr-4 h-20 rounded-full animate-bounce"
                             alt="Logo"
                         />
                     </Link>
@@ -40,59 +43,59 @@ const logo=`${import.meta.env.BASE_URL}logo.jpg`;
                                 </NavLink>
                             </li> */}
                             
-                             <li>
+                             <li className='flex '>
                                 <NavLink
                                 to="/"
                                    className={({ isActive }) =>
-                                            `block px-4 py-2 rounded-full font-medium transition-all duration-300 ${
+                                            `flex items-center gap-2 px-4 py-2 rounded-full font-medium transition-all duration-300 ${
                                                isActive
-                                        ? "bg-orange-600 text-white shadow-md"
+                                        ? "bg-green-500 text-white shadow-md"
                                                     : "text-black text-semibold hover:text-white hover:bg-gradient-to-r hover:from-orange-500 hover:to-pink-500 hover:scale-105 hover:shadow-lg"
                                                                    }`
                                     }
-                                >
+                                ><h1 className=' text-2xl animate-pulse'>👨‍💻</h1>
                                     About
                                 </NavLink>
                             </li>
-                            <li>
+                            <li className='flex'>
                                 <NavLink
                                 to="/contact"
                                     className={({ isActive }) =>
-                                            `block px-4 py-2 rounded-full font-medium transition-all duration-300 ${
+                                            `flex items-center gap-2 px-4 py-2 rounded-full font-medium transition-all duration-300 ${
                                                isActive
-                                        ? "bg-orange-600 text-white shadow-md"
+                                        ? "bg-green-500 text-white shadow-md"
                                                     : "text-black text-semibold hover:text-white hover:bg-gradient-to-r hover:from-orange-500 hover:to-pink-500 hover:scale-105 hover:shadow-lg"
                                                                    }`
                                     }
-                                >
+                                > <Contact className=" animate-pulse" />
                                     Contact
                                 </NavLink>
                             </li>
-                            <li>
+                            <li className='flex'>
                                 <NavLink
                                 to="/github"
                                     className={({ isActive }) =>
-                                            `block px-4 py-2 rounded-full font-medium transition-all duration-300 ${
+                                            `flex items-center gap-2 px-4 py-2 rounded-full font-medium transition-all duration-300 ${
                                                isActive
-                                        ? "bg-orange-600 text-white shadow-md"
+                                        ? "bg-green-500 text-white shadow-md"
                                                     : "text-black text-semibold hover:text-white hover:bg-gradient-to-r hover:from-orange-500 hover:to-pink-500 hover:scale-105 hover:shadow-lg"
                                                                    }`
                                     }
-                                >
+                                ><Github className='animate-pulse' />
                                     Github
                                 </NavLink>
                             </li>
-                            <li>
+                            <li className='flex'>
                                 <NavLink
                                 to="/resume"
                                     className={({ isActive }) =>
-                                            `block px-4 py-2 rounded-full font-medium transition-all duration-300 ${
+                                            `flex items-center gap-2 px-4 py-2 rounded-full font-medium transition-all duration-300 ${
                                                isActive
-                                        ? "bg-orange-600 text-white shadow-md"
+                                        ? "bg-green-500 text-white shadow-md"
                                                     : "text-black text-semibold hover:text-white hover:bg-gradient-to-r hover:from-orange-500 hover:to-pink-500 hover:scale-105 hover:shadow-lg"
                                                                    }`
                                     }
-                                >
+                                ><FileUser className="animate-pulse" />
                                     Resume
                                 </NavLink>
                             </li>
