@@ -57,16 +57,16 @@ export default function About() {
 
       {/* ---- DETAILS SECTION ---- */}
       <motion.div
-        className=" max-w-4xl mr-4 mx-auto   mt-24 p-10 mb-50 rounded-3xl bg-white backdrop-blur-lg shadow-2xl shadow-white border border-white/20"
+        className=" max-w-4xl mr-4 mx-auto   mt-24 p-10 mb-50 rounded-3xl bg-transparent backdrop-blur-lg shadow-2xl shadow-white border border-white/20"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-4xl font-bold py-3 text-transparent bg-clip-text bg-gradient-to-r from-cyan-900 to-purple-500 animate-bounce">
+        <h2 className="text-4xl font-bold py-3 text-transparent bg-clip-text bg-gradient-to-r from-white to-purple-800 animate-bounce">
           Hello! I'm Rajveer Pratap Singh
         </h2>
 
-        <p className="font- mt-6 text-black text-2xl">
+        <p className="font- mt-6 text-white text-2xl">
           <li>
             {" "}
             A passionate Final-Year B.Tech Computer Science student with a deep
@@ -114,7 +114,7 @@ export default function About() {
           What I'm interested in:
         </p>
 
-        <ul className="grid grid-cols-2 md:grid-cols-1 gap-3 text-black text-lg mt-4">
+        <ul className="grid grid-cols-2 md:grid-cols-1 gap-3 text-white text-lg mt-4">
           <li>* Frontend & Backend Web Development</li>
 
           <li>* Open Source Contribution </li>
@@ -126,7 +126,7 @@ export default function About() {
           Technologies I’ve Worked With:
         </h3>
 
-        <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 text-black text-lg mt-4">
+        <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 text-white text-lg mt-4">
           <li>• HTML & CSS</li>
           <li>• JavaScript</li>
           <li>• React</li>
@@ -141,7 +141,7 @@ export default function About() {
           Soft Skills:
         </h3>
 
-        <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 text-black text-lg mt-4">
+        <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 text-white text-lg mt-4">
           <li>• Time Management</li>
           <li>• Communication</li>
           <li>• Problem Solving</li>
@@ -175,25 +175,25 @@ export default function About() {
         </h2>
         </div>
        <motion.div
-        className=" max-w-4xl mr-4 mx-auto   mt-24 p-10 mb-50 rounded-3xl bg-white backdrop-blur-lg shadow-2xl shadow-white border border-white/20"
+        className=" max-w-4xl mr-4 mx-auto   mt-24 p-10 mb-50 rounded-3xl bg-transparent  backdrop-blur-lg shadow-2xl shadow-white border border-white/20"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
        
 
-        <ul className="grid grid-cols-1 md:grid-cols-1 gap-3  text-2xl text-black text-extrabold  mt-4">
+        <ul className="grid grid-cols-1 md:grid-cols-1 gap-3  text-2xl text-white text-extrabold  mt-4">
           <li className="mt-3 animate-pulse">
             • Myself Porfolio:{" 👉🏻👉🏻 "}
             <a
               href="https://rajveer9554.github.io/Myself-portfolio/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-green-500 hover:underline transition-colors text-black"
+              className="hover:text-green-500 hover:underline transition-colors text-white"
             >
               Click Here
             </a>
-            <h1 className="text-xl text-semibold text-black mt-1 ">
+            <h1 className="text-xl text-semibold text-white mt-1 ">
               I created my personal portfolio to highlight my projects,
               technical skills, and design abilities in one place. It allows me
               to demonstrate my frontend expertise, creativity in UI/UX, and
@@ -207,11 +207,11 @@ export default function About() {
               href="https://awaze-e-janata.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-green-500 hover:underline transition-colors text-black"
+              className="hover:text-green-500 hover:underline transition-colors text-white"
             >
               Click Here
             </a>
-            <h1 className="text-xl text-semibold text-black mt-1 ">
+            <h1 className="text-xl text-semibold text-white mt-1 ">
               {" "}
               Awaze-E-Janata is designed to give citizens a simple and efficient
               way to report their problems using AI. I built this platform to
@@ -228,11 +228,11 @@ export default function About() {
               href="https://rajveer9554.github.io/Tic-Tac-Toe/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-green-500 hover:underline transition-colors text-black"
+              className="hover:text-green-500 hover:underline transition-colors text-white"
             >
               Click Here
             </a>
-            <h1 className="text-xl text-semibold text-black mt-1 ">
+            <h1 className="text-xl text-semibold text-white mt-1 ">
               As a Practicing Coding and programming i have developed this
               project usingHTML,CSS,Javascript. This Tic-Tac-Toe game is a web
               application where two players take turns marking X and O on a 3x3
@@ -248,11 +248,11 @@ export default function About() {
               href="https://rajveer9554.github.io/Resume/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-green-500 hover:underline transition-colors text-black"
+              className="hover:text-green-500 hover:underline transition-colors text-white"
             >
               Click Here
             </a>
-            <h1 className="text-xl text-semibold text-black mt-1">
+            <h1 className="text-xl text-semibold text-white mt-1">
               As a practicing coding and programming i have developed this
               project using HTML,CSS,Javascript. The Resume Builder is a web
               application that allows users to create resumes quickly and
@@ -264,7 +264,7 @@ export default function About() {
 
 
 {/* Repository */}
-        <h1 className="mt-5 text-transparent bg-clip-text bg-gradient-to-r from-green-900 to-black animate-bounce text-semibold  text-2xl">
+        <h1 className="mt-5 text-transparent bg-clip-text bg-gradient-to-r from-green-900 to-white animate-bounce text-semibold  text-2xl">
           You can find all my projects in my GitHub Repository:{" 👉🏻👉🏻"}
           <Link to="/github" className="hover:underline text-pink-500">
             Click Here

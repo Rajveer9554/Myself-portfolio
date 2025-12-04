@@ -17,7 +17,7 @@ const logo=`${import.meta.env.BASE_URL}logo.jpg`;
                     <Link to="/" className="flex items-center">
                         <img
                             src={logo}
-                            className="mr-4 h-20 rounded-full animate-bounce"
+                            className="mr-4 h-20 rounded-full "
                             alt="Logo"
                         />
                     </Link>
