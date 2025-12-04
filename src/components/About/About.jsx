@@ -69,7 +69,7 @@ export default function About() {
         <p className="font- mt-6 text-white text-2xl">
           <li>
             {" "}
-            A passionate Final-Year B.Tech Computer Science student with a deep
+            A passionate Final-Year B.Tech Computer Science Student with a deep
             interest in building modern web applications.
           </li>
           <li>
